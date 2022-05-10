@@ -6,14 +6,19 @@
     </head>
     <body>
         <h1>Customers</h1>
-        <a href="index.html">Pizzas</a>
+        <a href="index.html">Home</a>
+        <a href="Pizzas.html">Pizzas</a>
         <a href="Employees.html">Employees</a>
         <a href="Customers.html">Customers</a>
         <a href="Orders.html">Orders</a>
-        <a href="OrderDetails.html">OrderDetails</a>
+        <a href="OrderDetails.html">Order Details</a>
 
         <div id="browse">
             <!-- Can include buttons here above the table -->
+            <label for="customer-search">Search for a customer:</label>
+        <input type="search" id="customer-search" name="q">
+
+<button>Search</button>
             <table border="1" cellpadding="5">
                 <tr>
                     <th>customer_id</th>
