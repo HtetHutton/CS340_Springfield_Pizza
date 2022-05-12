@@ -22,85 +22,70 @@
                 <tr>
                     <th>order_id</th>
                     <th>order_date</th>
-                    <th>order_total</th>
-                    <th>customer_id</th>
+                    <th>customer_name</th>
                     <th>employee_id</th>
+                    <th>pizza_type</th>
+                    <th>quantity</th>
+                    <th>order_total</th>
                     <th>Edit</th>
                     <th>Delete</th>
                 </tr>
                 <tr>
                     <td align="center" >1</td>
                     <td align="center">2022-04-27</td>
-                    <td align="center" >52.24</td>
-                    <td align="center">3</td>
+                    <td align="center">Ana Rodriguez</td>
                     <td align="center">1</td>
+                    <td align="center">Meat Lovers</td>
+                    <td align="center">2</td>
+                    <td align="center" >52.24</td>
                     <td><a href="#">Edit</a></td>
                     <td><a href="#">Delete</a></td>
                 </tr>
                 <tr>
                     <td align="center" >2</td>
                     <td align="center">2022-04-28</td>
-                    <td align="center" >25.22</td>
-                    <td align="center">2</td>
+                    <td align="center">Sam Smith</td>
                     <td align="center">NULL</td>
+                    <td align="center">Vegetarian</td>
+                    <td align="center">1</td>
+                    <td align="center" >25.22</td>
                     <td><a href="#">Edit</a></td>
                     <td><a href="#">Delete</a></td>
                 </tr>
                 <tr>
                     <td align="center" >3</td>
                     <td align="center">2022-04-29</td>
-                    <td align="center" >23.22</td>
-                    <td align="center">1</td>
+                    <td align="center">Davis Miguel</td>
                     <td align="center">2</td>
+                    <td align="center">Pepperoni</td>
+                    <td align="center">1</td>
+                    <td align="center" >23.22</td>
                     <td><a href="#">Edit</a></td>
                     <td><a href="#">Delete</a></td>
                 </tr>
             </table>
             <p>&nbsp;</p> <!-- just some space for looks -->
         </div> <!-- browse ends -->
-        <head>
-            <h2>Order Details</h2>
-        </head>
-        <div id="browse_details">
-            <!-- Can include buttons here above the table -->
-            <table border="1" cellpadding="5">
-                <tr>
-                    <th>line_number</th>
-                    <th>order_id</th>
-                    <th>pizza_id</th>
-                    <th>quantity</th>
-                </tr>
-                <tr>
-                    <td align="center" >1</td>
-                    <td align="center">1</td>
-                    <td align="center" >1</td>
-                    <td align="center" >2</td>
-                </tr>
-                <tr>
-                    <td align="center" >2</td>
-                    <td align="center">2</td>
-                    <td align="center" >4</td>
-                    <td align="center" >1</td>
-                </tr>
-                <tr>
-                    <td align="center" >3</td>
-                    <td align="center">3</td>
-                    <td align="center" >3</td>
-                    <td align="center" >1</td>
-                </tr>
-            </table>
-            <p>&nbsp;</p> <!-- just some space for looks -->
-        </div> <!-- browse_details ends -->
         <div id="insert">
             <form method="" id="">
             <legend><strong>Add Order</strong></legend>
             <fieldset class="field">
                 <label> order_date </label> <input type="date" name="odate">
                 <label> order_total </label> <input type="number" name="ototal">
-                <label> customer_id </label> <input type="number" name="cid">
-                <label> employee_id </label> <input type="number" name="eid">
+                <label> customer_id </label> <select name="cid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                <label> employee_id </label> <select name="eid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
                 <label> pizza_id </label> <input type="text" name="pid">
-                <label> quantity </label> <input type="text" name="qty">
+                <label> quantity </label> <input type="number" name="qty">
             </fieldset>
             <input class="btn" type="submit" id="addOrder" value="Add Order">
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
@@ -110,13 +95,28 @@
             <form method="" id="">
             <legend><strong>Update Order</strong></legend>
             <fieldset class="field">
-                <label> order_id </label> <input type="text" name="oid">
+                <label> order_id </label> <select name="oid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
                 <label> order_date </label> <input type="date" name="odate">
                 <label> order_total </label> <input type="number" name="ototal"> <!-- how to prefill today's date? -->
-                <label> customer_id </label> <input type="number" name="cid">
-                <label> employee_id </label> <input type="number" name="eid">
+                <label> customer_id </label> <select name="eid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
+                <label> employee_id </label> <select name="eid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    </select>
                 <label> pizza_id </label> <input type="text" name="pid">
-                <label> quantity </label> <input type="text" name="qty">
+                <label> quantity </label> <input type="number" name="qty">
             </fieldset>
             <input class="btn" type="submit" id="updateOrder" value="Save Order">
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->

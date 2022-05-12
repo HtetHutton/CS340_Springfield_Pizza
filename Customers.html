@@ -65,5 +65,39 @@
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
             </form>
         </div> <!-- insert ends -->
+        <div id="delete">
+            <form method="" id="">
+            <legend><strong>Delete Customer</strong></legend>
+            <fieldset class="field">
+                <label> customer_id </label> <select name="cid">
+                    <option value="0">&nbsp;</option>
+                    <option value="0">1</option>
+                    <option value="0">2</option>
+                    <option value="0">3</option>
+                </select>
+            </fieldset>
+            <input class="btn" type="submit" id="deleteCustomer" value="Delete Customer">
+            <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
+            </form>
+        </div> <!-- delete customer ends -->
+        <div id="update">
+            <form method="" id="">
+            <legend><strong>Update Customer</strong></legend>
+            <fieldset class="field">
+                <label> customer_id </label> <select name="cid">
+                    <option value="0">&nbsp;</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
+                <label> customer_first_name </label> <input type="text" name="cfname">
+                <label> customer_last_name </label> <input type="text" name="clname">
+                <label> email </label> <input type="text" name="cemail">
+                <label> customer_phone </label> <input type="text" name="cphone">
+            </fieldset>
+            <input class="btn" type="submit" id="updateCustomer" value="Update Customer">
+            <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
+            </form>
+        </div>
     </body>
 </html>
