@@ -11,11 +11,11 @@
         <a href="Employees.html">Employees</a>
         <a href="Customers.html">Customers</a>
         <a href="Orders.html">Orders</a>
-        <a href="OrderDetails.html">Order Details</a>
 
         <div id="browse">
             <!-- Can include buttons here above the table -->
-            <p> <a href="#">Add</a> </p>
+            <!-- <p> <a href="#">Add</a> </p> -->
+            <p></p>
         
             <table border="1" cellpadding="5">
                 <tr>
@@ -67,53 +67,5 @@
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
             </form>
         </div> <!-- insert ends -->
-        <div id="update">
-            <form method="" id="">
-            <legend><strong>Update Pizza Price</strong></legend>
-            <fieldset class="field">
-                <label> pizza_id </label> <select name="pid">
-                    <option value="0">&nbsp;</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    </select>
-                <label> pizza_type </label> <select type="text" name="ptype">
-                    <option value="0">&nbsp;</option>
-                    <option value="1">Meat Lovers</option>
-                    <option value="2">Cheese</option>
-                    <option value="3">Pepperoni</option>
-                    <option value="4">Vegetarian</option>
-                    </select>
-                <label> pizza_price </label> <input type="text" name="pprice">
-            </fieldset>
-            <input class="btn" type="submit" id="updatePizza" value="Save Pizza">
-            <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
-            </form>
-        </div> <!-- update ends -->
-        <div id="delete">
-            <form method="" id="">
-            <legend><strong>Delete Pizza</strong></legend>
-            <fieldset class="fields">
-                <p>Input pizza_id and pizza_type to delete: </p>
-                <label> pizza_id </label> <select type="text" name="pid">
-                    <option value="0">&nbsp;</option>
-                    <option value="1">1</option>
-                    <option value="2">2</option>
-                    <option value="3">3</option>
-                    <option value="4">4</option>
-                    </select>
-                <label> pizza_type </label> <select type="text" name="ptype">
-                    <option value="0">&nbsp;</option>
-                    <option value="1">Meat Lovers</option>
-                    <option value="2">Cheese</option>
-                    <option value="3">Pepperoni</option>
-                    <option value="4">Vegetarian</option>
-                    </select>
-            </fieldset>
-            <input class="btn" type="submit" id="deletePizza" value="Delete Pizza">
-            <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
-            </form>
-        </div> <!-- delete ends -->
     </body>
 </html>

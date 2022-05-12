@@ -11,11 +11,12 @@
         <a href="Employees.html">Employees</a>
         <a href="Customers.html">Customers</a>
         <a href="Orders.html">Orders</a>
-        <a href="OrderDetails.html">Order Details</a>
 
+        <p></p>
         <div id="browse">
             <!-- Can include buttons here above the table -->
-            <p> <a href="#">Add</a> </p>
+            <!-- Redundant button deleted -->
+            <!-- <p> <a href="#">Add</a> </p> -->
         
             <table border="1" cellpadding="5">
                 <tr>
@@ -57,6 +58,39 @@
             </table>
             <p>&nbsp;</p> <!-- just some space for looks -->
         </div> <!-- browse ends -->
+        <head>
+            <h2>Order Details</h2>
+        </head>
+        <div id="browse_details">
+            <!-- Can include buttons here above the table -->
+            <table border="1" cellpadding="5">
+                <tr>
+                    <th>line_number</th>
+                    <th>order_id</th>
+                    <th>pizza_id</th>
+                    <th>quantity</th>
+                </tr>
+                <tr>
+                    <td align="center" >1</td>
+                    <td align="center">1</td>
+                    <td align="center" >1</td>
+                    <td align="center" >2</td>
+                </tr>
+                <tr>
+                    <td align="center" >2</td>
+                    <td align="center">2</td>
+                    <td align="center" >4</td>
+                    <td align="center" >1</td>
+                </tr>
+                <tr>
+                    <td align="center" >3</td>
+                    <td align="center">3</td>
+                    <td align="center" >3</td>
+                    <td align="center" >1</td>
+                </tr>
+            </table>
+            <p>&nbsp;</p> <!-- just some space for looks -->
+        </div> <!-- browse_details ends -->
         <div id="insert">
             <form method="" id="">
             <legend><strong>Add Order</strong></legend>
@@ -65,6 +99,8 @@
                 <label> order_total </label> <input type="number" name="ototal">
                 <label> customer_id </label> <input type="number" name="cid">
                 <label> employee_id </label> <input type="number" name="eid">
+                <label> pizza_id </label> <input type="text" name="pid">
+                <label> quantity </label> <input type="text" name="qty">
             </fieldset>
             <input class="btn" type="submit" id="addOrder" value="Add Order">
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
@@ -79,6 +115,8 @@
                 <label> order_total </label> <input type="number" name="ototal"> <!-- how to prefill today's date? -->
                 <label> customer_id </label> <input type="number" name="cid">
                 <label> employee_id </label> <input type="number" name="eid">
+                <label> pizza_id </label> <input type="text" name="pid">
+                <label> quantity </label> <input type="text" name="qty">
             </fieldset>
             <input class="btn" type="submit" id="updateOrder" value="Save Order">
             <input class="btn" type="button" value="Cancel"> <!-- On click go back to browse -->
