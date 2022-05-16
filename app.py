@@ -1,23 +1,22 @@
 from flask import Flask, render_template, json, redirect
 from flask_mysqldb import MySQL
 from flask import request
+import database.db_connector as db
 import os
 
 app = Flask(__name__)
-app.config['MYSQL_HOST'] = 'classmysql.engr.oregonstate.edu'
-app.config['MYSQL_USER'] = 'cs340_vasquem2'
-app.config['MYSQL_PASSWORD'] = '9610' #last 4 of onid
-app.config['MYSQL_DB'] = 'cs340_vasquem2'
-app.config['MYSQL_CURSORCLASS'] = "DictCursor"
+
 
 mysql = MySQL(app)
 
+db_connection = db.connect_to_database()
 
 # Routes
 
 @app.route('/')
 def root():
     return render_template('index.html')
+
 
 @app.route('/index')
 def index():
